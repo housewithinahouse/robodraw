@@ -1,0 +1,100 @@
+<html>
+<!doctype html>
+	<head>         
+		<title>sketchbook | Robotic Drawing Collective</title>
+		<link href="css/sketchbook.css" type="text/css" rel = "stylesheet" />
+		<script type= "text/javascript" src="/gallery/processing-js/processing-1.4.1.js"></script>
+		<script type = "text/javascript">
+		var bound = false;
+		function bindJavascript() {
+			var pjs = Processing.getInstanceById('sketchbookCanvas');
+		if(pjs!=null) {
+				pjs.bindJavascript(this);
+				bound = true; }
+			if(!bound) setTimeout(bindJavascript, 250);
+		}
+		bindJavascript();
+		
+		function flipSwitch(id, switchName) {
+       			var pjs = Processing.getInstanceById(id);
+        		pjs.flipSwitch(switchName); 
+        		}
+
+		function showXYCoordinates(x, y) {
+			document.getElementById('xcoord').value = x;
+			document.getElementById('ycoord').value = y;
+		}
+		function showVarA(n) {
+			document.getElementById('varA').value = n;
+		}
+      	  	</script>
+      	  	<!-- HTML5 Shiv: a library for dealing with IE 8.0- -->
+		<script src="/js/html5shiv.min.js"></script>
+	</head>
+
+	<body>
+	<div class ="wrapper">
+		<header>
+			<img src = "/images/RoboDrawCoBanner.gif">			
+		</header>
+
+		<section class="main">
+			<article>
+				<!--<script src="/gallery/processing-js/processing-1.4.1.min.js"></script>-->
+				<canvas id = "sketchbookCanvas" data-processing-sources="sketchbook.pde">
+				</canvas>
+				<div id="coordinates">
+					x:<input type="textfield" size = "2" id="xcoord">
+					y:<input type="textfield" size = "2" id="ycoord">
+				</div>
+				<div id="monitorA">
+					 varA: 
+					 <input type="textfield" id="varA" size="2" readonly >
+					 <input type="checkbox" id="testing">
+					 <button type="button" 
+					 	 onclick="flipSwitch('sketchbookCanvas','testing')">
+					 	testing
+					 </button>
+				</div>				
+			</article>
+		</section>
+
+
+		<!--THIS IS THE MENU FOR EVERY PAGE 
+		    We mostly don't touch it       -->
+		<aside>
+			<div id="menu3">
+			<ul>
+				<li><a href="about.html">
+						<span class="title">About</span>
+						<span class="text">Who we are</span>
+					</a>
+				</li>
+				<li><a href="gallery/index.html">
+						<span class="title">Portfolio</span>
+						<span class="text">What we do</span>
+					</a>
+				</li>
+				<li><a href="http://robodrawco.tumblr.com/">
+						<span class="title">Blog</span>
+						<span class="text">What we talk about</span>
+					</a>
+				</li>
+				<li><a href="http://www.etsy.com/shop/roboticdrawingco">
+						<span class="title">Shop</span>
+						<span class="text">Buy a drawing</span>
+					</a>
+				</li>
+				<li><a href="mailto:roboticdrawingcollective@gmail.com">
+						<span class="title">Contact</span>
+						<span class="text">How to get in touch</span>
+					</a>
+				</li>
+			
+			</ul>
+			</div>
+		</aside>
+
+		</div>
+	</body>
+</html>

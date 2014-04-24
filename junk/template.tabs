@@ -1,0 +1,191 @@
+
+<!-- Below is the JavaScript that changes the display of the 
+     tabs and panel content. Modify the div's for the tabs 
+     and panel content before modifying this JavaScript. Once 
+     those are done, you'll have the necessary id names to 
+     modify the JavaScript. -->
+
+<script type="text/javascript" language="JavaScript"><!--
+function ManageTabPanelDisplay() {
+//
+// Between the parenthesis, list the id's of the div's that 
+//     will be affected when tabs are clicked. List in any 
+//     order. Put the id's in single quotes (apostrophes) 
+//     and separate them with a comma -- all one line.
+//
+var idlist = new Array('tab1focus','tab2focus','tab3focus','tab1ready','tab2ready','tab3ready','content1','content2','content3');
+
+// No other customizations are necessary.
+if(arguments.length < 1) { return; }
+for(var i = 0; i < idlist.length; i++) {
+   var block = false;
+   for(var ii = 0; ii < arguments.length; ii++) {
+      if(idlist[i] == arguments[ii]) {
+         block = true;
+         break;
+         }
+      }
+   if(block) { document.getElementById(idlist[i]).style.display = "block"; }
+   else { document.getElementById(idlist[i]).style.display = "none"; }
+   }
+}
+//--></script>
+
+
+
+<!-- Below is the CSS for the example tab panel div tags. 
+     You may, of course, change these according to your 
+     design requirements.
+
+     Refer to the Creating a Tab Panel article for notes 
+     about this CSS. -->
+
+<style type="text/css">
+.tab { 
+	font-family: monospace; 
+	font-size: 11px;
+	width: 100px;
+	white-space: nowrap;
+	text-align: center;
+	border-style: solid;
+	border-color: black;
+	border-left-width: 1px;
+	border-right-width: 1px;
+	border-top-width: 1px;
+	border-bottom-width: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	cursor: pointer;
+	}
+.tabhold { 
+	background-color: white;
+	color: black;
+	}
+.tabfocus { 
+	background-color: black;
+	color: white;
+	}
+.tabcontent { 
+	font-family: monospace; 
+	font-size: 14px;
+	width: 400px;
+	// height: 275px; 
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	padding-top: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	}
+</style>
+
+
+
+<!-- Below is the example tab panel. Notes are embedded in 
+     the HTML, and the Creating a Tab Panel article also 
+     contains information. -->
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<div id="tab1focus" class="tab tabfocus" style="display:block;">
+			Introduction
+			</div>
+		
+			<div id="tab1ready" class="tab tabhold" style="display:none;">
+			<!-- Between (...) provide IDs visible, when this tab is clicked. 				 Format :: ('tab1focus','tab2ready','content1') -->
+				<span onclick="ManageTabPanelDisplay ('tab1focus', 
+								      'tab2ready',
+								      'tab3ready', 
+								      'content1')">
+								      Introduction
+								      </span>
+			</div>
+		</td>
+		<td width="20"> 	</td>
+		<td>
+			<div id="tab2focus" class="tab tabfocus" style="display:none;">
+			Middle Part
+			</div>
+			<div id="tab2ready" class="tab tabhold" style="display:block;">
+			<!-- Between (...) provide IDs visible, when this tab is clicked. 				     Format :: ('tab1focus','tab2ready','content1') -->
+				<span onclick="ManageTabPanelDisplay ('tab1ready',
+						         	     'tab2focus',
+						           	     'tab3ready',
+						           	     'content2')">
+						           	     Middle Part
+						           	     </span>
+			</div>
+		</td>
+		<td width="20">  	</td>
+		<td>
+			<div id="tab3focus" 
+			     class="tab tabfocus" 
+			     style="display:none;">
+			About Final
+			</div>
+			<div id="tab3ready" class="tab tabhold" style="display:block;">
+			<!-- Between (...) provide IDs visible, when this tab is clicked. 				     Format :: ('tab1focus','tab2ready','content1') -->
+				<span onclick="ManageTabPanelDisplay('tab1ready',
+								     'tab2ready',
+								     'tab3focus',
+								     'content3')">
+								     About Final
+								     </span>
+			</div>
+		</td>
+		<td width="180"> </td>
+		<td> 
+	</tr>
+	<tr>
+		<td colspan="6">
+			<div id="content1" 
+			     class="tabcontent" 
+			     style="display:block;">
+				<p style="margin-top:0px">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia quam nunc, pulvinar fringilla risus euismod sed. Ut interdum ullamcorper vulputate. Fusce vitae libero purus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum tristique, justo eget sagittis mollis, dolor neque malesuada elit, id elementum metus mi ut turpis. Aliquam erat volutpat. Morbi condimentum facilisis metus, ut lobortis ligula semper sed. Suspendisse id velit vel magna adipiscing auctor vel id augue. Phasellus aliquam enim nec purus ornare egestas. In ut ligula nec tellus suscipit tempor nec eu orci. Cras sagittis a erat lacinia elementum. Maecenas malesuada aliquet urna, ac interdum dui tincidunt placerat. 
+				<p>
+				Suspendisse eget sollicitudin nibh. Vivamus sed eleifend nibh. Maecenas semper fermentum tellus, eu sagittis velit feugiat a. Praesent a blandit tellus. Nulla scelerisque magna ut nisl luctus, lobortis sagittis est viverra. In sed porttitor arcu. Etiam sit amet sem lacus. Mauris euismod sit amet leo quis volutpat.
+				Vivamus sollicitudin nibh vitae consequat aliquam. Aliquam hendrerit volutpat urna, ut venenatis quam varius in. Sed pulvinar sodales erat. Fusce tincidunt ultrices lorem in hendrerit. Vestibulum vestibulum nisl ut velit tincidunt, sed tincidunt dolor gravida. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque dignissim sollicitudin eleifend. Aliquam vitae fermentum augue, ut porta odio. Vivamus ac lectus vitae magna mattis luctus. Morbi cursus dignissim augue sed rhoncus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin elit tellus, suscipit et lorem id, rhoncus adipiscing lorem. Maecenas sodales ligula in dictum pretium. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec euismod diam metus, et tempus velit faucibus vitae.
+				Sed lobortis ultricies eros, at ornare urna vestibulum ac. Curabitur varius leo non risus viverra convallis. Suspendisse potenti. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lectus nunc, placerat eu dapibus vitae, volutpat sit amet est. Nullam sodales fringilla nibh vitae rhoncus. Fusce varius mollis mauris et rutrum. Aenean metus nulla, volutpat sit amet sodales sit amet, ornare non massa. Quisque imperdiet ullamcorper ligula, at gravida quam elementum eget. Nullam bibendum diam consectetur, ultricies lorem eget, iaculis sem. Aliquam pulvinar laoreet consectetur.
+				Duis euismod velit egestas, commodo neque eget, vehicula erat. Ut odio nisl, imperdiet ac nibh nec, tristique sodales eros. In hendrerit, velit ac ultrices accumsan, mi lectus pharetra felis, vel mollis quam lectus vulputate massa. Sed facilisis nec lorem a pellentesque. Integer at dolor felis. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac ligula tincidunt sapien fermentum consectetur id nec enim. Vestibulum dictum turpis id tincidunt volutpat. In blandit elementum nulla, gravida ullamcorper tellus ornare ut. Etiam imperdiet eget sem ut ullamcorper. Aliquam eu leo risus. Donec interdum sapien sed tellus pharetra posuere at sed quam. Maecenas blandit, velit vestibulum lacinia aliquet, elit velit fringilla quam, at scelerisque dolor turpis et nulla. Phasellus sagittis luctus ipsum sit amet placerat. 
+				</p>
+				<p> Something must be done.</p>	
+				<p style="margin-bottom:0px">
+				Something has been done.
+				</p>
+			</div>
+			<div id="content2" 
+			     class="tabcontent" 
+			     style="display:none;">
+				<p style="margin-top:0px">
+					Suspendisse eget sollicitudin nibh. Vivamus sed eleifend nibh. Maecenas semper fermentum tellus, eu sagittis velit feugiat a. Praesent a blandit tellus. Nulla scelerisque magna ut nisl luctus, lobortis sagittis est viverra. In sed porttitor arcu. Etiam sit amet sem lacus. Mauris euismod sit amet leo quis volutpat.
+					Vivamus sollicitudin nibh vitae consequat aliquam. Aliquam hendrerit volutpat urna, ut venenatis quam varius in. Sed pulvinar sodales erat. Fusce tincidunt ultrices lorem in hendrerit. Vestibulum vestibulum nisl ut velit tincidunt, sed tincidunt dolor gravida. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque dignissim sollicitudin eleifend. Aliquam vitae fermentum augue, ut porta odio. Vivamus ac lectus vitae magna mattis luctus. Morbi cursus dignissim augue sed rhoncus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin elit tellus, suscipit et lorem id, rhoncus adipiscing lorem. Maecenas sodales ligula in dictum pretium. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec euismod diam metus, et tempus velit faucibus vitae.
+					Duis euismod velit egestas, commodo neque eget, vehicula erat. Ut odio nisl, imperdiet ac nibh nec, tristique sodales eros. In hendrerit, velit ac ultrices accumsan, mi lectus pharetra felis, vel mollis quam lectus vulputate massa. Sed facilisis nec lorem a pellentesque. Integer at dolor felis. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac ligula tincidunt sapien fermentum consectetur id nec enim. Vestibulum dictum turpis id tincidunt volutpat. In blandit elementum nulla, gravida ullamcorper tellus ornare ut. Etiam imperdiet eget sem ut ullamcorper. Aliquam eu leo risus. Donec interdum sapien sed tellus pharetra posuere at sed quam. Maecenas blandit, velit vestibulum lacinia aliquet, elit velit fringilla quam, at scelerisque dolor turpis et nulla. Phasellus sagittis luctus ipsum sit amet placerat. 
+				<p> Something must be done.</p>	
+				<p style="margin-bottom:0px">
+				Something has been done.
+				</p>
+			</div>
+			<div id="content3" class="tabcontent" style="display:none;">
+				<!--This is an image -->
+				<div style="margin: 0px 20px 10px 0px; 
+					    width: 80px; height: 105px; 
+					    float: left;">
+					    <img src="/images/20000710w80105.jpg" 
+					         alt="author" border="0" 
+					         height="105" width="80">
+				</div>
+				<p style="margin-top:0px">
+				Suspendisse eget sollicitudin nibh. Vivamus sed eleifend nibh. Maecenas semper fermentum tellus, eu sagittis velit feugiat a. Praesent a blandit tellus. Nulla scelerisque magna ut nisl luctus, lobortis sagittis est viverra. In sed porttitor arcu. Etiam sit amet sem lacus. Mauris euismod sit amet leo quis volutpat.
+				Vivamus sollicitudin nibh vitae consequat aliquam. Aliquam hendrerit volutpat urna, ut venenatis quam varius in. Sed pulvinar sodales erat. Fusce tincidunt ultrices lorem in hendrerit. Vestibulum vestibulum nisl ut velit tincidunt, sed tincidunt dolor gravida. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque dignissim sollicitudin eleifend. Aliquam vitae fermentum augue, ut porta odio. Vivamus ac lectus vitae magna mattis luctus. Morbi cursus dignissim augue sed rhoncus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin elit tellus, suscipit et lorem id, rhoncus adipiscing lorem. Maecenas sodales ligula in dictum pretium. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec euismod diam metus, et tempus velit faucibus vitae.
+				Sed lobortis ultricies eros, at ornare urna vestibulum ac. Curabitur varius leo non risus viverra convallis. Suspendisse potenti. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lectus nunc, placerat eu dapibus vitae, volutpat sit amet est. Nullam sodales fringilla nibh vitae rhoncus. Fusce varius mollis mauris et rutrum. Aenean metus nulla, volutpat sit amet sodales sit amet, ornare non massa. Quisque imperdiet ullamcorper ligula, at gravida quam elementum eget. Nullam bibendum diam consectetur, ultricies lorem eget, iaculis sem. Aliquam pulvinar laoreet consectetur.
+				Duis euismod velit egestas, commodo neque eget, vehicula erat. Ut odio nisl, imperdiet ac nibh nec, tristique sodales eros. In hendrerit, velit ac ultrices accumsan, mi lectus pharetra felis, vel mollis quam lectus vulputate massa. Sed facilisis nec lorem a pellentesque. Integer at dolor felis. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac ligula tincidunt sapien fermentum consectetur id nec enim. Vestibulum dictum turpis id tincidunt volutpat. In blandit elementum nulla, gravida ullamcorper tellus ornare ut. Etiam imperdiet eget sem ut ullamcorper. Aliquam eu leo risus. Donec interdum sapien sed tellus pharetra posuere at sed quam. Maecenas blandit, velit vestibulum lacinia aliquet, elit velit fringilla quam, at scelerisque dolor turpis et nulla. Phasellus sagittis luctus ipsum sit amet placerat. 
+				</p>
+				<p style="margin-bottom:0px">
+				Willmaster.com
+				</p>
+			</div>
+		</td>
+	</tr>
+</table>

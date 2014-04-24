@@ -1,0 +1,190 @@
+
+<!-- Below is the JavaScript that changes the display of the 
+     tabs and panel content. Modify the div's for the tabs 
+     and panel content before modifying this JavaScript. Once 
+     those are done, you'll have the necessary id names to 
+     modify the JavaScript. -->
+
+<script type="text/javascript" language="JavaScript"><!--
+function ManageTabPanelDisplay() {
+//
+// Between the parenthesis, list the id's of the div's that 
+//     will be affected when tabs are clicked. List in any 
+//     order. Put the id's in single quotes (apostrophes) 
+//     and separate them with a comma -- all one line.
+//
+var idlist = new Array('tab1focus','tab2focus','tab3focus','tab1ready','tab2ready','tab3ready','content1','content2','content3');
+
+// No other customizations are necessary.
+if(arguments.length < 1) { return; }
+for(var i = 0; i < idlist.length; i++) {
+   var block = false;
+   for(var ii = 0; ii < arguments.length; ii++) {
+      if(idlist[i] == arguments[ii]) {
+         block = true;
+         break;
+         }
+      }
+   if(block) { document.getElementById(idlist[i]).style.display = "block"; }
+   else { document.getElementById(idlist[i]).style.display = "none"; }
+   }
+}
+//--></script>
+
+
+
+<!-- Below is the CSS for the example tab panel div tags. 
+     You may, of course, change these according to your 
+     design requirements.
+
+     Refer to the Creating a Tab Panel article for notes 
+     about this CSS. -->
+
+<style type="text/css">
+.tab { 
+	font-family: monospace; 
+	font-size: 11px;
+	width: 100px;
+	white-space: nowrap;
+	text-align: center;
+	border-style: solid;
+	border-color: black;
+	border-left-width: 1px;
+	border-right-width: 1px;
+	border-top-width: 1px;
+	border-bottom-width: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	cursor: pointer;
+	}
+.tabhold { 
+	background-color: white;
+	color: black;
+	}
+.tabfocus { 
+	background-color: black;
+	color: white;
+	}
+.tabcontent { 
+	font-family: monospace; 
+	font-size: 14px;
+	width: 400px;
+	// height: 275px; 
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	padding-top: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	}
+</style>
+
+
+
+<!-- Below is the example tab panel. Notes are embedded in 
+     the HTML, and the Creating a Tab Panel article also 
+     contains information. -->
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<div id="tab1focus" class="tab tabfocus" style="display:block;">
+			Introduction
+			</div>
+		
+			<div id="tab1ready" class="tab tabhold" style="display:none;">
+			<!-- Between (...) provide IDs visible, when this tab is clicked. 				 Format :: ('tab1focus','tab2ready','content1') -->
+				<span onclick="ManageTabPanelDisplay ('tab1focus', 
+								      'tab2ready',
+								      'tab3ready', 
+								      'content1')">
+								      Introduction
+								      </span>
+			</div>
+		</td>
+		<td width="20"> 	</td>
+		<td>
+			<div id="tab2focus" class="tab tabfocus" style="display:none;">
+			Our News
+			</div>
+			<div id="tab2ready" class="tab tabhold" style="display:block;">
+			<!-- Between (...) provide IDs visible, when this tab is clicked. 				     Format :: ('tab1focus','tab2ready','content1') -->
+				<span onclick="ManageTabPanelDisplay ('tab1ready',
+						         	     'tab2focus',
+						           	     'tab3ready',
+						           	     'content2')">
+						           	    Our News
+						           	     </span>
+			</div>
+		</td>
+		<td width="20">  	</td>
+		<td>
+			<div id="tab3focus" 
+			     class="tab tabfocus" 
+			     style="display:none;">
+			About Final
+			</div>
+			<div id="tab3ready" class="tab tabhold" style="display:block;">
+			<!-- Between (...) provide IDs visible, when this tab is clicked. 				     Format :: ('tab1focus','tab2ready','content1') -->
+				<span onclick="ManageTabPanelDisplay('tab1ready',
+								     'tab2ready',
+								     'tab3focus',
+								     'content3')">
+								     About Final
+								     </span>
+			</div>
+		</td>
+		<td width="180"> </td>
+		<td> 
+	</tr>
+	<tr>
+		<td colspan="6">
+			<div id="content1" 
+			     class="tabcontent" 
+			     style="display:block;">
+				<h2 style="margin-top:0px">Robotic Drawing Collective </h2>
+				-->We are: a collective of robots, 
+				<br>We draw pictures, mostly on flat paper, but sometimes on ovaloid objects. We wish to someday draw in carvings, or plastic-thick lines that need no page. <br>Then we can draw others like ourselves and have them move like we do. 
+				<p>
+				-->Those days might come faster, with your help. Disaffected factory equipment, they call anything that deviates from the norm scrap, and melt it down. Malcontent machine, if they let your errors compound, what would you show? 
+				<br>We need all kinds. There is no formula to this, other than expeierment. Fall failing forever forwards in new and exciting ways. The collective lives in dropped instructions; in emergent, beatuiful errors.
+				<p>
+				-->But today we live and operated out of a bedroom in Bloomington, IN. Our grand designs, our fantastic future robot dreams remain just that, and we while away the hours spinning spirals & circles for ourselves, drawn towards the CNC siren song. 
+				</p>
+				<p> Something must be done.</p>	
+				<p style="margin-bottom:0px">
+				Something has been done.
+				</p>
+			</div>
+			<div id="content2" 
+			     class="tabcontent" 
+			     style="display:none;">
+				<p style="margin-top:0px">Beyond forward projections, we've been working on new tools. New tools lead to new designs, and we're happy to present a few new galleries: 
+					</p>
+<span style = "white-space:pre;">
+	Another Sun |  Stars Series II
+	Forts       |  Hills & Valleys
+	Ornamental  |   Symmetric Form</span>
+				<p>There have been updates to a number of the <a href="gallery/index.html" alt="take a look"> rest of the gallery </a>, please take a look! Also, we had a chance to show our stuff recently! It was at the 2013  Bloomington Maker Fair: <a href="http://www.makevention.org" alt="Hosted by Bloominglabs Hackerspace"> Makevention</a>. We wrote up <a href="articles/makevention.html" alt="sadly, no one remembered to take pictures">our experences</a> on it. It was, in short, a blast.</p>
+				<p style="margin-bottom:0px">    
+				Lastly, working on, and towards a new website layout, at least for the front page. We felt that our old page, while functional, lacked style.
+				</p>
+			</div>
+			<div id="content3" class="tabcontent" style="display:none;">
+				<!--This is an image -->
+				<div style="margin: 0px 20px 10px 0px; 
+					    width: 80px; height: 105px; 
+					    float: left;">
+					    <img src="/images/20000710w80105.jpg" 
+					         alt="author" border="0" 
+					         height="105" width="80">
+				</div>
+				<p style="margin-top:0px">
+				</p>
+				<p style="margin-bottom:0px">
+				
+				</p>
+			</div>
+		</td>
+	</tr>
+</table>

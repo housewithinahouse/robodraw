@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- Oh my goodness, a website! Hand coded (ooo) by our very own Edwin! -->
+<html>
+	<head>         <!--vvv REPLACE vvv -->
+		<title>######################### | Robotic Drawing Collective</title>
+		<link href="css/homepage.css" type="text/css"
+			  rel = "stylesheet" />
+	</head>
+	<body>
+	<div class ="wrapper">
+		<header>
+			<img src = "images/RoboDrawCoBanner.gif">
+			
+		</header>
+
+		<section class="main">
+			<article> 
+				    <h1> HEADER </h1>
+				<p>    
+				    <!-- TEXT HERE -->
+				    <br>
+				    <!-- MORE TEXT -->
+				</p>
+			</article>
+			<article>
+			        <!-- full width image  -->  
+			        <figure>
+					<img src="images/THIS IS ONLY A TEST.jpg" />
+				</figure>
+			</article>
+			<article> <!--this is where a link to a gallery should go:
+				      display 3 images, has a caption-->				
+				<figure class="cap-top">	
+					<a href="gallery/index.html">
+					
+					<img src="images/720x720/##################.jpg" class="third"/>	
+					<img src="images/720x720/################.jpg" class="third"/>	
+					<img src="images/720x720/#################.jpg" class="third"/>	
+					<figcaption> ###########333CAPTION!!########### </figcaption>
+					</a>		<!-- ^^^ REPLACE ME! ^^^^ -->			
+				</figure>			
+			</article>
+		</section>
+
+
+		<!--THIS IS THE MENU FOR EVERY PAGE 
+		    We mostly don't touch it       -->
+		<aside>
+			<div id="menu3">
+    <ul>
+        <li><a href="about.html">
+                <span class="title">About</span>
+                <span class="text">Who we are</span>
+            </a>
+        </li>
+        <li><a href="gallery/index.html">
+                <span class="title">Portfolio</span>
+                <span class="text">What we do</span>
+            </a>
+        </li>
+        <li><a href="http://robodrawco.tumblr.com/">
+                <span class="title">Blog</span>
+                <span class="text">What we talk about</span>
+            </a>
+        </li>
+		<li><a href="http://www.etsy.com/shop/roboticdrawingco">
+                <span class="title">Shop</span>
+                <span class="text">Buy a drawing</span>
+            </a>
+        </li>
+        <li><a href="mailto:roboticdrawingcollective@gmail.com">
+                <span class="title">Contact</span>
+                <span class="text">How to get in touch</span>
+            </a>
+        </li>
+	
+    </ul>
+</div>
+		</aside>
+
+				</div>
+	</body>
+</html>

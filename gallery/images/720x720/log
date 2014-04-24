@@ -1,0 +1,13 @@
+To do:
+mutt, lynx or w3m, screen or tmux, ncftp, tin (a newsreader), ded? 
+ncdu, tudu
+mpd + pratical music search
+cavewall
+
+13.10.6.001: installed midnight commander (mc) a ncurses directory manager, and (aptitude) a ncurses package manager. Found them both wile looking at: http://www.linuxplanet.com/linuxplanet/reviews/6964/1 .
++internet was terrible slow tonight. Was afraid that my house would fall into itself, because of the rain. 
+#square dancing as code. Patterns encoded in the careful steppings of square dancers. Patterns wouldn't have to come back together the same. Would make for a good scramble code, because of the paired nature. Square dancing is cool, see bookmarks.
+see also: http://freecode.com/search/?q=ncurses&section=projects&Go.x=0&Go.y=0
+13.10.4.000: found the hard drive filling up today, I def. sized it too small (8G), but it had balloned over night. .Private seemed ballooned, I haven't stored that much stuff. Googled around for answers on that, or how to decrypt that part of the system, seemed either like too much or led to circular results. Poked around in the file manager, deleted the .run file for the video driver (122mb) and eventually stumbled upon: .xsession-errors.old weighing in at 1.2G. Buh? less'd it, full of junk. Googled it, found others with the same problem. Seems that the size is unlimited? It should clip its self, but mine hadn't after reboot. So I rm'd it, touch'd a new one and chattr +i'd the new one so it was immutable, i.e. not changeable. Stupid fix, but I need space. cp'd the website I got help from to ~/Documents/xsessionErrorsOldFix so I could do it again/undo it at some future remove. The real lesson here is that I need to repartiton the HD, 8G isn't enough space for Ubuntu. Or I need to move on to Arch in another part. Also, I should set up a shared music/video/picture setup, on it's on partion. And get a USB disk drive, and start saving more stuff. 
+Found out about MOC, a command line music player. Seems great, now I just need music. mocp is how you call it, if you quit with q it disocnnects from the server and leaves it running. mocp -x quits. f turns on or off the metadata, h for help. Also found a nice looking conky theme: box. 
+sudo cp <your_font> /usr/share/fonts/ installs fonts. 

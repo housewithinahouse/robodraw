@@ -1,0 +1,54 @@
+#	...did the "chattr +i" to lock it. Seems like a decent fix.
+# I'll figure out logging later, but I'm cloging it up with stupid errors
+# while setting up conky.
+
+
+from: http://askubuntu.com/questions/314723/why-is-the-xsession-errors-old-file-so-big
+Why is the .xsession-errors.old file so big?	
+
+Problem:
+Many users (including me) found out from one moment to another that the
+ usage disk space is really strange. One day I had 50Gb free and the next I
+had 3Gb, it is just crazy.
+
+This happened with different versions of Ubuntu (11.04, 12.04 and 12.10 just
+to mention).
+
+Some of those user have create question on this site, some of them:
+
+    Disk Usage Very Strange
+    Ubuntu 12.10 recognizes me only 3GB of free space
+    Why am I getting low disk space usage?
+
+Solution
+
+@NathanWienand have discovered that the problem was caused by the .xsession-errors.old file (it can be found on the $HOME directory) and he and others user solved the problem removing the file. An example of the size that can have this file is ~100Gb, not reasonable..
+
+Question
+
+    Why does this happen?
+    Is deleting the file the only way to solve it?
+    Isn't there another way to solve this with a large period effect?
+   
+----------------------------------------------------------------
+I would just stop them being created by running these command:
+
+rm .xsession-errors.old
+
+touch .xsession-errors.old
+
+sudo chattr +i .xsession-errors.old
+
+So delete the file, create a new one, and then set the immutable attribute to stop anything writing or reading it.
+
+You will need to logout.
+
+Hope it helps.
+--------------------------
+I really don't know what the third command does. Explain a bit further please. Do you mean, create the file so nothing can write it? Also, the file is not .xsession-errors but .xsession-errors.old – Lucio Jun 30 at 19:23
+	
+Yes, the 3rd command will basically lock the file up so nothing can write or read it. Not even root. The only way to unlock it is by running sudo chattr -i .xsession-error.old Here is a wiki page on the chattr command: chattr – BiggJJ Jun 30 at 19:46
+	
+But why I would do something like that? That is not a solution. Don't forget that the file has a purpose for the system. – Lucio Jun 30 at 19:47
+	
+It would stop huge amounts of data being written to the file. As I said, I am not sure why it happens, but this is one way to stop it happening. – BiggJJ Jun 30 at 19:49

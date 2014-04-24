@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Stacking</title>
+</script>
+<style type="text/css">
+.layer1Style
+{
+position: absolute;
+top:50pt;
+left:50pt;
+background-color:red;
+z-index:0;
+}
+.layer2Style
+{
+position: absolute;
+top:75pt;
+left:75pt;
+background-color:green;
+z-index:0;
+}
+.layer3Style
+{
+position: absolute;
+top:100pt;
+left:100pt;
+background-color:blue;
+z-index:10;
+}
+</style>
+
+<script type="text/javascript">
+var top="layer3";
+
+function mover(newTop)
+{
+var oldTopStyle=document.getElementById(top).style;
+var newTopStyle=document.getElementById(newTop).style;
+oldTopStyle.z-index="0";
+newTopStyle.z-index="10";
+top=document.getElementById(top).id;
+}
+</script>
+</head>
+
+<body>
+<div class="layer1Style" id="layer1" onmouseover="mover('layer1')">
+<p>This is my first paragraph</p>
+</div>
+<div class="layer2Style" id="layer2" onmouseover="mover('layer2')">
+<p>This is my second paragraph</p>
+</div>
+<div class="layer3Style" id="layer3" onmouseover="mover('layer3')">
+<p>This is my third paragraph</p>
+</div>
+</body>
+</html>

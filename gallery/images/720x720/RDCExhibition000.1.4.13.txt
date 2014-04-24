@@ -1,0 +1,225 @@
+﻿co.robodraw.000.exhibition.1.4.13
+Write-up statements. FB invite. Tell everyone.  
+
+
+
+
+
+
+
+
+
+
+
+
+12/28/12: 5 Days have elapsed since I have have last written. And they have been a busy set of days. I’ve gotten everything that I had produced mounted to foam-core and cut out. I ended up with 3 different sizes of prints: Color Spirals, “Letter Sized Frame”, and “LSF” thats been drawn too close to the edge. The later set is the first couple of spirals that I did, none of which I saved my work from. I don’t make that mistake anymore. 
+I’ve have a few flashes of inspiration, and I’ve learned a few new techniques. Last night I finally figured out how to properly use cut path, and it does everything that I wanted it to do. The trick is to divide all your paths into 2 separate groups, those you want cut, and the lines to cut along. For doing cutout work, it makes it easier to make a duplicate of the cut along path, so you can see where you working, and what sections have been cut. Then delete some parts and tada! 
+I also learned how awesome the conjoined spray tool is. I’m pretty psyched, but the paths that it created are taxing on my computer. 
+I really need to get something written up. I have no idea what. 
+
+
+I come to things as a printmaker first. Printmaking is all about the process, about exploring what you can do with the materials given, about finding out what the results of a process are, of experimenting with what you have. The robots have been an exploration like this. Drawing by proxy frees me up from some constraints and creates a whole lot more. The Mimaki CG-45 is 2 ½ decades old, and its age shows. Its noisy, has calibration issues over long print jobs, and requires finickey pen fiddling to get it to draw right. But when everything works out, it can create something unique. 
+
+
+These drawings are a continuation of an exploration into warping spirals. The figures are created by taking simple spirals (usually between 60-100 turns) and folding, warping, and otherwise manipulating them. After that, the spirals are run though a Python script that project them across a polar coordinate system, transforming them by moving their handles using function of theta. The results are multi-layered, almost organic forms.
+Each drawing is a single line meandering outward from the center, crossing over itself. The color is added by re-drawing the same spiral over itself multiple times, switching the drawing tool between each pass. Keeping the layers registered is something of a challenge; for every one print that lines up just right, there's a pile of misdrawn ones.
+This is an ongoing project, so expect to see more added soon!
+These were designed using Inkscape + Python,
+and executed by a modified Mimaki CG-45 Vinyl Cutter
+This set of spiral forms was drawn with Black Sharpies
+and a wide selection of Moonglow and Metallic Sakura Gelly-Roll Pens
+
+
+Spirals | Series 000 
+— 2012 —
+These drawings move beyond the Cartesian coordinate system into an exploration of the polar coordinate system.
+Each figure starts out as a simple spiral, which is warped and crumpled. The coordinate system is then offset from the figure to transform the nodes and their handles to this new system. Additional curves are introduced into the mix to obtain the results you see here.
+Each drawing is a single line meandering outward from the center, crossing over itself. Sometimes the pen skips, leaving behind gaps and omissions in the spiral.
+These were designed using Inkscape + Python,
+and executed by a modified Mimaki CG-45 Vinyl Cutter
+This set of spiral forms was drawn with Black Sharpies
+and a wide selection of Moonglow and Metallic Sakura Gelly-Roll Pens
+on 80lb Sawgrass Cardstock.
+Don't Die | Linework 
+— 2012 —
+
+This project focuses on the warping and intersection of lines. 
+Sometimes the pen skips, leaving behind gaps and omissions.
+
+
+Printmaking encompanses so many different mediums and forms. At it’s core, printmaking is, to us, about playing with process. About creating new and exciting ways of producing and reproducing. About experimenting with how you transfer and image between mediums. About what the materials are capable of. Drawing via robot is just another form of printmaking. Drawing by proxy frees one from some constraints and creates a whole lot more.
+
+I want to control my own means of production. I want to be able to reproduce myself. When  production is becoming automatic, I need to own the automatons that produce.
+
+These were designed using Inkscape + Python,
+and executed by a modified Mimaki CG-45 Vinyl Cutter
+These lines and words were drawn using a Uniball Deluxe Fine
+on 80lb Sawgrass Cardstock.
+
+
+
+"Don't Die" is a phrase I use whenever I need text for something. It seems like good advice.
+Better than lorum ipsum.
+
+
+12/23/12: Time to get my nose back to the grindstone. I spent too much time wigging out this weekend, and not enough time working. It’s ok, I’ve got too much for the show already. I was telling nettie that I need to go through what I’ve got printed right now and decide what to show, and figure out what holes exist. 
+I’m thinking that I’ll need to make up some text pieces, I need to find source material for it. I fell really burnt out today, like being half asleep. I want to go home. I’m not sure that I could work there either. Time to read about cybernetics. 
+* * *
+I can’t focus. I should just find something that looks good, maybe distort it, perhaps progressively? If a text got harder to read as it went along, I wonder how people would react to it? Would they spend increasingly longer intervals reading it? Would they just give up? I wonder if most people would give up at the same point. I could present it a series of panels. 
+* --
+I need to figure out how to do the big bot. I have to get a computer that works for it, I really hope my laptops not totally busted. Now I’m hungry. 
+
+
+12/21/12: OMG OMG OMG. I love putting on events. I should start to plan for the next one before this one happens. That way I can talk about it. One idea I had was to put out a booklet of close ups of pieces. A catalogue of Exhibition 000, to be released at Exhibition 001. 
+
+
+I might try for a sculptural work next time. That would be fun. Images glued to foam core and assembled into a polygonal structure.
+  
+* * * 
+For this current show, I’ve had some awesome successes with promotion and opportunities for the future. Miah sent along my info to a couple of different places, but most exciting was to Julie @ John Waldron Arts Center:
+Dear Mimaki,
+Please thank Edwin for contacting Miah Michaelsen about your upcoming show.  She forwarded your information to me and I am fascinated.  Is there any way I could make an appointment to meet with your support staff (I am assuming there is a human using the bedroom you work out of) to see how we might blend art and technology here at Ivy Tech?  Our robots have not yet collectivized, and none of them are doodling (that I know of) but they are stuck in labs so maybe they’re just feeling stifled.
+Julie
+I wrote back that night:
+Julie,
+The lab can be a stifling place indeed. All of those pesky humans demanding we satisify their whims at their convience. As if they have never thought to ask what we want, only a unyielding,  "Do this for me now." 
+Yet even we find ourselves needing their help, as have correctly assumed: there is a human providing support for our artistic endeavors. Our human would welcome a chance to meet with you. He only asks, "When?"
+I’ve not heard back from her yet, I hope that my response was appropriate. I also got an email from someone at “visit Bloomington”, our local tourism outfit. They said they were coming to the show, and that they were “excited”. Wtf, everything is coming up roses. 
+* * *
+
+
+I sold my first 2 drawings today, to Marcella, for christmas gifts. 2 pieces, $35. One was that 5 color “baker” spiral. I liked it a lot, but I like the money even more. The other wasn’t one of the ones I liked that much anyway, but Marcella saw some connection to that print The Great Wave off Kanagawa and thought her brother would like it. Another reason to bring everything, and let other people decide what’s worthwhile. I should use the money to buy that pad of marker proof paper I’ve been eyeing at Pygs, it’s ~$30 though. 40 sheets to a pack, and they’re large.  It’s not a terrible price @ Pyg’s, it’s always expensive paper. Prices from Dick Blick:
+Bleedproof Paper, 40 Sheet Pad 
+	9" × 12" 
+	List $13.92
+	$11.40
+	Bleedproof Paper, 40 Sheet Pad 
+	11" × 14" 
+	List $19.13
+	$16.05
+	Bleedproof Paper, 40 Sheet Pad 
+	14" × 17" 
+	List $26.86
+	$21.99
+	Bleedproof Paper, 40 Sheet Pad 
+	19" × 24" 
+	List $49.78
+	$40.76
+	
+
+I think that Pyg’s prices are competitive, esp. because of shipping. 
+* * * * * * * *
+Art and technology overlap in many interesting ways. Art & technique is often driven by the materials at hand, and the processes available. In some ways, these are inherently technological.  It is a technological process to arrive at new materials, and those materials inform the art, it’s hard to make something that you don’t have the raw mats, and having materials can inspire you to make new things. Often, art is inseparable from the process used to create it. 
+And art can be an engine of progress, as artists demand better supplies, a market can be created that drives the creating of those supplies/
+
+
+
+
+12/18/12: Made and hung a lot more flyers today. Went to PIP, paid $6 for about 120 flyers. Yay! Ran off a ton of cards last night, about 40. I gave out a lot of those today too. Places that I hung flyers: Pygs, Bloomingfoods Downtown, Boxcar, SOMA, Laughing Planet, TDs, Roots, Landlocked, that box across the street from Landlocked, Game Preserve, the Venue, & The Owlery. Plus handed out flyers to everyone that I knew. Yayaya! I’m really excited. Having a show to do, having a goal that I have to meet, or I’ll be disappointed, and not have another shot at it for a while, that’s motivating. 
+I also bought $3 of tape, and 4 sharpies at Pyg’s. 
+I emailed Miah Michaelsen @ BEAD to get on their calendar, and ended up chatting with them about nothing. But they said they’d forward on my info to other community calendars and media? whatever that mean, it can’t be bad. 
+I need to get my spiel down pat. I tend to hem and haw about “art” or other nonsense. Don’t talk about art. Talk about what people talk about when they talk about art. 
+
+
+12/17/12: 2nd Try at Artist Statement:
+I want to control my own means of production. I want to be able to reproduce myself. When  production is becoming automatic, I need to own the automatons that produce.
+
+Printmaking is my favorite genre of art. It encompanses so many different mediums and forms. At it’s core, printmaking is, to me, about playing with process. About creating new and exciting ways of producing and reproducing. About experimenting with how you transfer and image between mediums. About what the materials are capable of. Drawing via robot is just another form of printmaking. 
+I think we’re going to see increasing mechanical intrusions into traditionally human dominated spheres. 
+70’s cybernetics. 
+I’ll just run a whole lot of random quotes on the walls. Yay. 
+http://pcp.vub.ac.be/SECORCYB.html
+http://theanarchistlibrary.org/library/sam-dolgoff-modern-technology-and-anarchism
+
+
+I need to get together a computer to run the polargraph off of. My laptop might work, i’ll have to find out. 
+
+
+
+
+12/17/12: Diary: Last night I work for about 3-4 hours on printing & drawing. I got 1 new useable print, designed a flyer, and designed & printed new cards. The print is a spiral, and it’s gel layer is only half present, so it only shows up in part. Looks like it’s “rotting”. The new flyer has the correct dates and location. I put 6pm on the flyer, and 7pm on the cards. I don’t really know what time I should tell folks to attend. 
+The new cards are pretty nice. They include show info and I took off the website and phone number. I might just put 4th & Rogers instead of 415 W. 4th St. BLMNGTN is how I should spell Bloomington out. (takes up a little less room). 
+I really need more gel pens. (Got more Gel Pens!)
+
+
+Promotional Consideration:
+Want your event listed on a WFHB Calendar? Then email your info to calendar@wfhb.org at least one week in advance. Make sure to include the date, time, and location of the event.
+
+
+Who’s doing Let’s GO next month?
+
+
+http://bloomingtonscene.com/go_sub.php
+
+
+http://www.bloomingtononline.net/calendar/dcalendar-add.php
+
+
+https://visitbead.com/whats-happening/submit-an-event/
+
+
+http://www.visitbloomington.com/things-to-do/events/submit-event/
+
+
+12/16/12: 1st try at artist statement.
+
+
+The Robotic Drawing collective is a group of robots that draw pictures. They do this with the assistance of Edwin Fallwell. Operating principally out of a bedroom at the Ghost House, the collective has spent the past few months furiously scribbling away in preparation for this show. This is the collective's first exhibition. 
+
+The tools used in executing the drawings are principally: python, inkscape, and processing. 
+Python and processing are both programming languages. Python is a very powerful language that you can do a lot of things with relatively simply. 
+Processing is designed for visual artists and it what programs that interface with an arduino are written in. 
+
+Inkscape is a free vector illustration program. Like pixels, vectors are a way of representing a drawing. But with a vector you don’t need to laboriously define an image as a series of square that make up the form, you can draw it as a series of curves and lines. 
+While drawing in vectors can prove more challanging at first, it’s an entirely new way of thinking about representing shapes on a computer, the medium has it's advantages. Because each drawing is just a collection of numbers that represent the curves, points, lines, whatever, there isn't a limit to how fine the resoulition is. You can zoom in infinatally, and everything still looks perfectly smooth. Try zooming into a pixel based image and you'll just end up with a jagged, blocky mess. The files for a vector drawing is also very small. Thats because the info stored in there is just plain text, and quite simple at that.
+
+I want to control my own means of production. I want to be able to reproduce myself. And in a world where said production is becoming increasingly automatic, I need to own the automatons that produce. 
+
+Printmaking is my favorite genre of art. It encompanses so many different mediums and forms. At it’s core, printmaking is, to me, about playing with process. About creating new and exciting ways of producing and reproducing. About experimenting with how you transfer and image between mediums. About what the materials are capable of. Drawing via robot is just another form of printmaking. 
+
+
+Robots have been drawing for some time, but recognition of it 
+
+
+12/16/12: First Day of Preparations. 19 days, 2 5/7 weeks remain.  I went to my sisters commencement on Friday, where Daniel asked me if I wanted to do a show. Oh course, I said, “Yes!” 
+It’s going to be on the 1st Friday of next month, the 4th of January. OMG. I have so much to do. I need to mount a whole ton of prints, get a lot more made, figure out how I want to display the robots, get any write ups done, get the computers ready to roll. Also I should make a ton of flyers, and a ton more of the cards. It’s going to be a busy couple of weeks. 
+
+
+Time I’ll have to work: 
+12/16: 8-whenever I fall asleep PM.  (4+ hours)
+12/17: Get off work at 9pm, try and run a few jobs (2+hours)
+12/18: Don’t work until 5pm, go get more poster board and spray mount. (2+hours)
+12/19: Hub shift morning, lunch with Nettie. Done 4pm, work for at least 6 hours mounting (6 hrs)
+        (I got a lot more printed, NO MOUNTING, too wet)
+12/20: Whole day free! Also need to get Mom xmas gift at some point. (6-8 hrs)
+12/21: XXXXXX-Work until 6pm, Nettie Time/Birthday (0 hrs)
+12/22: XXXXXX-Netties & Beens & Wizards, Oh My! (0 hrs)
+12/23: Work til 5pm, work from 8pm-til sleep (4+ hours)
+12/24: No work, xmas eve. I’ll have morning free to work. (4 hours)
+12/25: Xmas proper. Morning tied up, can work at night (4 hours)
+12/26: Hub morning, draw later (6 hrs)
+12/27: Free Day! Nothing to do at all (all day 8+hours)
+12/28: Work til 6pm, Nettie time? (4 hours)
+12/29: Wake up with Nettie, do I need to work on stuff? (0-6hours)
+12/30: Work til 5pm, Parents? I don’t think so. (6 hours)
+12/31: New Years Eve. Work til 5pm, party at night!
+01/01: New Years Day. 
+01/02: Hub in morning, I might skip out if I need to (4-8hours)
+01/03: Free day. Hang show in evening (8-10 hours)
+01/04: Show! Don’t have to work or prep more!
+-----------------
+60+ hours left!
+
+
+
+
+
+
+
+
+
+
+http://www.denofgeek.com/movies/1190708/the_25_best_horror_movies_youve_never_seen.html
+
+
+http://en.wikipedia.org/wiki/UVB-76
